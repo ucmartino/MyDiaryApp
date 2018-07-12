@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+	<meta name="description" content="online journal where users can pen down their thoughts and feeling">
+	<meta name="keywords" content="diary, online journal, best online diary, professional online journal">
+	<meta name="author" content="Martin Iyooh">
+    <title>MyDiary | About</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+  	<div class="container">
+  	   <div id="brand">
+            <a href="index.html"><h1>MyDiary</h1></a>
+  	   </div>
+  	   <nav>
+         <ul>
+         	<li class="current"><a href="new.html">Write Diary</a></li>
+         </ul>
+  	   </nav>
+    </div>
+  </header>
+
+  <div class="container-entry">
+        <div class="header-entry">
+            <h3>Welcome to MyDiary</h1>
+            <p>What are your thoughts and feelings for today...</p>
+       </div>
+            <form action="show.html" method="POST">
+                  <div class="textTitle">
+                      <label for="title"><strong>Title</strong></label>
+                      <input type="text" name="title" placeholder="Title" required>
+                  </div>
+                  <div id="textTop">
+                      <label for="text-body"><strong>Text</strong></label>
+                      <textarea name="text-body" placeholder="What happened today?" required></textarea>
+                  </div>
+               <div>
+                      <input type="submit" value="Save">
+               </div>
+            </form>
+    </div>
+
+  <footer>
+     <p>MyDiary, Copyright &copy; 2018</p>
+  </footer>
+</body>
+</html>
