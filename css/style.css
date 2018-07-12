@@ -92,6 +92,14 @@ article#main-col{
     width: 65%;
 }
 
+footer{
+    padding: 5px;
+    margin-top: 200px;
+    color:#ffffff;
+    background-color: #45799b;
+    text-align: center;
+}
+
 
 /*Styling Login & Sign Up Pages*/
 .login-pg{
