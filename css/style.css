@@ -169,3 +169,58 @@ button:hover {
     cursor:pointer;
     font-size:26px;
 }
+
+/*new,edit,show,update diary Style*/
+
+.container-entry {
+    margin:0 200px 0 200px; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .header-entry{
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #45799b;
+      text-align: center;
+  }
+
+input[type=text]{
+    width: 100%;
+    padding:12px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical;
+
+}
+
+textarea{
+    width: 908px;
+    height: 220px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+#textTop{
+    margin-top: 20px;
+}
+
+input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #45799b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+} 
