@@ -80,3 +80,67 @@ header a:hover{
 	margin-bottom: 10px;
 	font-size: 50px;
 }
+
+
+/*Styling Login & Sign Up Pages*/
+.login-pg{
+    width:560px;
+    padding:0;
+    margin:auto;
+}
+
+.log-text{
+    text-align: center;
+    color: #45799b;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form{
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 540px;
+    margin: 0 auto 50px auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.form input{
+    font-family: "Arial, Helvetica, sans-serif";
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+#fullName{
+    border: none;
+}
+
+#userName{
+    border: none;
+}
+
+.form button{
+    font-family: "Arial, Helvetica, sans-serif";
+    outline: 0;
+    color:#ffffff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    cursor:pointer;
+    font-size:26px;
+}
