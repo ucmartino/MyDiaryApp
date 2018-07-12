@@ -81,6 +81,17 @@ header a:hover{
 	font-size: 50px;
 }
 
+aside#sidebar{
+    float:right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
 
 /*Styling Login & Sign Up Pages*/
 .login-pg{
