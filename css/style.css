@@ -7,7 +7,7 @@ body{
 }
 
 .home{
-	min-height:400px;
+	min-height:670px;
 	background:url("../img/myDiaryMockup.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -76,6 +76,8 @@ header a:hover{
 }
 
 #homepage h1{
+	z-index: 1;
+	position: relative;
 	margin-top: 100px;
 	margin-bottom: 10px;
 	font-size: 50px;
