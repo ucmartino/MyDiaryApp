@@ -1,0 +1,228 @@
+body{
+    font-family: sans-serif;
+	font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+	padding: 0;
+}
+
+.home{
+	min-height:670px;
+	background:url("../img/myDiaryMockup.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* All page styling Attributes */
+
+.container{
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+a{
+    color: #4892c0;
+}
+
+.current a{
+    color: #45799b;
+    font-weight: bold;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+header{
+	padding-top:30px;
+	min-height:70px;
+}
+
+header a{
+	text-decoration:none;
+	font-size:16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding:0 20px 0 20px;
+}
+
+header #brand{
+	float:left;  
+}
+
+header #brand h1{
+	margin:0;
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+ 
+header a:hover{
+	color:#4892c0;
+	font-weight:bold;
+}
+
+#homepage{
+	text-align:center;
+	color:#ffffff;
+	min-height: 400px;
+}
+
+#homepage h1{
+	z-index: 1;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	font-size: 50px;
+}
+
+aside#sidebar{
+    float:right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 200px;
+    color:#ffffff;
+    background-color: #45799b;
+    text-align: center;
+}
+
+button{
+    background: #45799b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+/*Styling Login & Sign Up Pages*/
+.login-pg{
+    width:560px;
+    padding:0;
+    margin:auto;
+}
+
+.log-text{
+    text-align: center;
+    color: #45799b;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form{
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 540px;
+    margin: 0 auto 50px auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.form input{
+    font-family: "Arial, Helvetica, sans-serif";
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:16px;
+}
+
+#fullName{
+    border: none;
+}
+
+#userName{
+    border: none;
+}
+
+.form button{
+    font-family: "Arial, Helvetica, sans-serif";
+    outline: 0;
+    color:#ffffff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    cursor:pointer;
+    font-size:26px;
+}
+
+/*new,edit,show,update diary Style*/
+
+.container-entry {
+    margin:0 200px 0 200px; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .header-entry{
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: #45799b;
+      text-align: center;
+  }
+
+input[type=text]{
+    width: 100%;
+    padding:12px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    resize: vertical;
+
+}
+
+textarea{
+    width: 908px;
+    height: 220px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+#textTop{
+    margin-top: 20px;
+}
+
+input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #45799b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+} 
