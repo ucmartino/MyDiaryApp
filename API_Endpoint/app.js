@@ -50,6 +50,23 @@ app.get("/api/v1/diaries/:diaryId", (req, res) => {
       });
 });
 
+//UPDATE ROUTE
+app.put("/api/v1/diaries/:diaryId", (req, res) => {
+    for (let i = 0; i < diaries.length; i++) {
+        if (diaries[i].id === parseInt(req.params.diaryId)) {
+          diaries[i].title = req.body.title;
+          diaries[i].content = req.body.content;
+          return res.json({
+            diaries,
+            message: 'diary updated successfully',
+          });
+        }
+      }
+      return res.status(404).json({
+        message: 'diary not found',
+      });
+});
+
 app.listen(3002, () => {
     console.log("Server is up and listening on 3002");
 });
