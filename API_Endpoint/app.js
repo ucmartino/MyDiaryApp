@@ -18,6 +18,12 @@ app.get("/", (req, res) => {
    res.send("Welcome to MyDiary App");
 });
 
+//SHOW ALL DIARY ENTRIES
+app.get("/api/v1/diaries", (req, res) => {
+    return res.json({
+        diaries
+    });
+});
 
 app.listen(3002, () => {
     console.log("Server is up and listening on 3002");
