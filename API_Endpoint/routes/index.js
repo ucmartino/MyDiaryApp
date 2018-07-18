@@ -69,3 +69,5 @@ router.get("/", (req, res) => {
          message: 'diary not found',
        });
  });
+
+ module.exports = router;
