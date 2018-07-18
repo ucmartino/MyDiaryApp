@@ -25,6 +25,16 @@ app.get("/api/v1/diaries", (req, res) => {
     });
 });
 
+//POST ROUTE
+app.post("/api/v1/diaries", (req, res) => {
+    const id = diaries.length + 1;
+    const title = req.body.title;
+    const content = req.body.content;
+    const newDiary = {id: id, title: title, content: content};
+    diaries.push(newDiary);
+    res.json([diaries]);
+});
+
 app.listen(3002, () => {
     console.log("Server is up and listening on 3002");
 });
