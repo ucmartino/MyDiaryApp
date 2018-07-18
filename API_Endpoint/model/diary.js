@@ -21,4 +21,4 @@ const diaries = [
   }
 ];
 
-module.exports = diaries;
+export default diaries;
