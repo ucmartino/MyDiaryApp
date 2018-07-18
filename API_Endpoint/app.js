@@ -34,6 +34,21 @@ app.post("/api/v1/diaries", (req, res) => {
     diaries.push(newDiary);
     res.json([diaries]);
 });
+   
+//SHOW ROUTE FOR SINGLE DIARY ENTRY
+app.get("/api/v1/diaries/:diaryId", (req, res) => {
+    for (let i = 0; i < diaries.length; i++ ) {
+        if (diaries[i].id === parseInt(req.params.diaryId)) {
+          return res.json({
+            diaries: diaries[i],
+            message: 'success',
+          });
+        }
+      }
+      return res.status(404).json({
+        message: 'diary not found',
+      });
+});
 
 app.listen(3002, () => {
     console.log("Server is up and listening on 3002");
