@@ -67,6 +67,21 @@ app.put("/api/v1/diaries/:diaryId", (req, res) => {
       });
 });
 
+//DELETE ROUTE
+app.delete("/api/v1/diaries/:diaryId", (req, res) => {
+    for (let i = 0; i < diaries.length; i += 1) {
+        if (diaries[i].id === parseInt(req.params.diaryId, 10)) {
+          diaries.splice(i, 1);
+          return res.json({
+            message: 'diary removed successfully',
+          });
+        }
+      }
+      return res.status(404).json({
+        message: 'diary not found',
+      });
+});
+
 app.listen(3002, () => {
     console.log("Server is up and listening on 3002");
 });
