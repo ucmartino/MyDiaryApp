@@ -9,11 +9,22 @@
         "es6": true,
         "mocha": true
     },
-    "rules": {
+    "rules": { 
         "comma-dangle": [
             "error",
             "never"
         ],
+        "quotes":"off",
+        "import/newline-after-import": 0,
+        "spaced-comment":"off",
+        "no-trailing-spaces":"off",
+        "linebreak-style":"off",
+        "arrow-body-style":"off",
+        "eol-last":"off",
+        "no-plusplus":"off",
+        "radix":"warn",
+        "no-console":"warn",
+        "padded-blocks":"off",
         "no-unused-vars": [
             "error",
             {
