@@ -28,7 +28,7 @@
         "no-unused-vars": [
             "error",
             {
-                "vars": "local",
+                "vars":"local",
                 "args": "none"
             }
         ]
