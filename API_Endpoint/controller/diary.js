@@ -3,12 +3,12 @@ const diaries = require('../model/diary');
 class Diaries {
    
 //SHOW ALL DIARY ENTRIES
-  static getDiary(req, res) {
+  static getDiaries(req, res) {
     return res.json({ diaries });
   }
    
   //POST ROUTE
-  static createDiaries(req, res) {
+  static createDiary(req, res) {
     diaries.push({
       id: diaries.length + 1,
       title: req.body.title,
@@ -21,7 +21,7 @@ class Diaries {
   }
   
   //SHOW ROUTE FOR SINGLE DIARY ENTRY
-  static retrieveDiaries(req, res) {
+  static retrieveDiary(req, res) {
     for (let i = 0; i < diaries.length; i++) {
       if (diaries[i].id === parseInt(req.params.diaryId)) {
         return res.json({
@@ -36,7 +36,7 @@ class Diaries {
   }
    
   //UPDATE ROUTE
-  static updateDiaries(req, res) {
+  static updateDiary(req, res) {
     for (let i = 0; i < diaries.length; i++) {
       if (diaries[i].id === parseInt(req.params.diaryId)) {
         diaries[i].title = req.body.title;
@@ -53,7 +53,7 @@ class Diaries {
   }
    
   //DELETE ROUTE
-  static removeDiaries(req, res) {
+  static removeDiary(req, res) {
     for (let i = 0; i < diaries.length; i += 1) {
       if (diaries[i].id === parseInt(req.params.diaryId)) {
         diaries.splice(i, 1);
