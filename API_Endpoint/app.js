@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const allRoutes = require("./routes/index");
 
 app.use(allRoutes);
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(morgan("short"))
 
