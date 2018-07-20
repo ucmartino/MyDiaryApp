@@ -25,6 +25,7 @@
         "radix":"warn",
         "no-console":"warn",
         "padded-blocks":"off",
+        "prefer-template":"off",
         "no-unused-vars": [
             "error",
             {
