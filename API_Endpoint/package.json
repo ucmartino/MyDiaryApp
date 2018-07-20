@@ -4,7 +4,7 @@
   "description": "A set of API endpoints that uses data structure to store data in memory",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"mocha"
   },
   "author": "Martin Iyooh",
   "license": "ISC",
