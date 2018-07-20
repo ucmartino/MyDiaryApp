@@ -1,7 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const morgan = require("morgan");
-const routes = require("./routes/index");
+import express from "express";
+import bodyParser from "body-parser";
+import morgan from "morgan";
+import routes from "./routes/index";
 
 const app = express();
 app.use(bodyParser.json());

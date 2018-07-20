@@ -1,7 +1,7 @@
-const Diaries = require('../controller/diary');
-const diaries = require('../model/diary');
+import Diaries from '../controller/diary';
+import diaries from '../model/diary';
 
-module.exports = (app) => {
+export default (app) => {
   app.get('/api/v1/diaries', Diaries.getDiaries);
   app.get('/api/v1/diaries/:diaryId', Diaries.retrieveDiary);
   app.post('/api/v1/diaries', Diaries.createDiary);

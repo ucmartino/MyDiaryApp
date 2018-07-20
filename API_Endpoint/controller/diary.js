@@ -1,4 +1,4 @@
-const diaries = require('../model/diary');
+import diaries from '../model/diary';
 
 class Diaries {
    
@@ -68,4 +68,4 @@ class Diaries {
   }
 }
 
-module.exports = Diaries;
+export default Diaries;
