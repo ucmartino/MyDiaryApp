@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("short"));
 routes(app);
 
-app.listen(3002, () => {
-  console.log("Server is up and listening on 3002");
+const PORT = process.env.PORT || 3002;
+app.listen(PORT, () => {
+  console.log("Server is up and listening on: " + PORT);
 });
